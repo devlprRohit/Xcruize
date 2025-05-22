@@ -1,0 +1,366 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+
+.menu {
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+  }
+  .menu a {
+    color: white;
+    text-decoration: none;
+  }
+
+/* desktop */
+@media (min-width: 768px) {
+  .navbar {
+    background-color: rgb(0, 0, 51);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+}
+
+/* tablet */
+@media (min-width: 480px) and (max-width: 768px) {
+    .navbar {
+      background-color: rgb(0, 0, 51);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+    .pills {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+     justify-content: center;
+    }
+  }
+
+  
+  
+  /* mobie */
+  @media (max-width: 480px) {
+    .navbar {
+      background-color: rgb(0, 0, 51);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+    .popular {
+      display: flex;
+      align-items: center;
+     flex-direction: column;
+     justify-content: center;
+    }
+    .pills {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+     flex-direction: column;
+     justify-content: center;
+    }
+  }
+
+.hero{
+    height: 60vh;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/hero-cruise.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.btn-book{
+ font-weight: bold;
+ padding: 10px;
+ margin: 10px;
+ background-color: rgb(255, 132, 0);
+ border-radius: 5px;
+ color:white;
+ border: none;
+}
+
+
+
+
+.heading{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 15px 10px 10px;
+  border-left: 5px solid orange;
+  padding: 0px 10px;
+ gap: 15px;
+}
+
+
+.popular {
+  display: flex;
+  align-items: center;
+ 
+}
+
+.pop {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+.pills {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.pills .pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  max-width: 100%;
+  flex-shrink: 1;
+
+ 
+}
+
+.pills .pill:hover {
+  background-color: #e0e0e0;
+}
+
+.pill img {
+  width: 18px;
+  height: 18px;
+}
+
+.discover-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px;
+  gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+#item1 {
+  grid-column: span 4;
+  height: 300px; 
+  width: 100%;
+}
+
+
+
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .discover-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .card {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  
+  #item1 img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+  }
+ 
+}
+
+@media (max-width: 480px) {
+
+  
+
+
+.discover-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 12px;
+  margin: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+#item1 {
+  width: 100%;
+  grid-column: span 1;
+  height: auto; 
+}
+
+
+#item1 img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+}
+
+
+#contact{
+ text-align: center;
+ padding: 20px 40px
+}
+
+#contact h3{
+  border-bottom: 5px solid orange;
+  display: inline-block;
+}
+
+.contact_info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  
+}
+.contact_info div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:20px 50px;
+  border: 2px solid grey;
+  width:45%;
+  height: 100px;
+}
+
+@media (max-width: 768px) {
+
+.contact_info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  
+}
+.contact_info div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:20px 50px;
+  border: 2px solid grey;
+  width:90%;
+  height: 100px;
+}
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  background-color: darkblue;
+  padding: 50px 10%;
+  flex-wrap: wrap; 
+  gap: 40px;
+}
+
+.footer div {
+  min-width: 200px;
+}
+
+.footer h3 {
+  color: orange;
+  margin-bottom: 15px;
+}
+
+.footer h5 {
+  color: white;
+  margin: 6px 0;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.social-icons img{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.footer_rights{
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+}
+.footer_rights p{
+  padding-bottom: 10px;
+}
